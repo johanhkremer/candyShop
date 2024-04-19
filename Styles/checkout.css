@@ -1,0 +1,47 @@
+.underline {
+    text-decoration: underline;
+}
+
+.headerKassa {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.ordernummer {
+    font-size: 1rem;
+    font-weight: bold;
+}
+  
+.orderForm {
+    margin-left: 1rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+.inputWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.successwrapper {
+    margin-left: 2rem;
+    margin-top: 10%;
+}
+
+@media (min-width: 480px) {
+    .successwrapper {
+        margin-left: 3rem;
+    }
+    .headerKassa {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .headerKassa {
+        font-size: 2rem;
+    }
+}

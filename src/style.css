@@ -1,0 +1,198 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+
+  --lightGreen: #73e2a2;
+  --mainGreen: #3bcc7e;
+  --pink: #ff66a1;
+  --lighPink: rgb(255, 240, 248);
+  --yellow: #fde58a;
+  --textColor: #0e1017;
+  --purple: #9753ea;
+
+  background-color: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p{
+  margin: 0px;
+}
+
+
+body {
+  margin: 0px;
+}
+
+#app {
+  padding-inline: 1rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.1em 3em;
+  margin-block: 1em;
+  width: 100%;
+
+  background-color: var(--pink);
+  border: 2px solid lightpink;
+  border-radius: 10em;
+
+  color: white !important;
+  font-weight: bolder;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  gap: 1rem;
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
+  margin-top: 0;
+  background-color: white;
+  border-left: 1px #636363cc solid;
+  z-index: 3;
+  overflow-y: scroll;
+}
+
+label {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 250px;
+  padding: 0.5rem;
+  margin-bottom: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+  width: 100% ;
+}
+
+.btn {
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 16px !important;
+}
+
+.btnIcon{
+  background-color: #94dcdf!important;
+  color: #0c4648 !important;
+}
+.btnIcon:active{
+  background-color: #6db0b3!important;
+}
+
+.btnText{
+  background-color: #ff66a1 !important;
+  color: white !important;
+  font-weight: bolder !important;
+}
+
+.btnText:active{
+background-color: pink;
+}
+
+button:disabled{
+  background-color: #f0f0f0!important;
+  color: #505050 !important;
+}
+
+button:active {
+  background-color: #2fa365;
+}
+
+@media (min-width: 480px) {
+  #app {
+    padding-inline: 1rem;
+  }
+  nav {
+    margin-block: 2em;
+  }
+
+  input {
+    width: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  #app {
+    padding-inline: 1rem;
+  }
+  nav {
+    margin-block: 2em;
+  }
+  aside{
+    width: 60%;
+  }
+
+  input {
+    width: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  aside{
+    width: 50%;
+  }
+  #app {
+    padding-inline: 3rem;
+  }
+  nav {
+    margin-block: 2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  aside{
+    width: 40%;
+  }
+  #app {
+    padding-inline: 3rem;
+  }
+  nav {
+    margin-block: 3em;
+  }
+}
+
+@media (min-width: 1400px) {
+  #app {
+    padding-inline: 10rem;
+  }
+  nav {
+    margin-block: 3em;
+  }
+}
